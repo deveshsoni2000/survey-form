@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alumni Feedback Survey</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Alumni Feedback Survey</h1>
+    <p id="description">Thank you for taking the time to help us improve the Institute.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<input id="name" type="text" required placeholder="Enter your name"/></label>
+        <label id="email-label">Email<input id="email" type="email" required placeholder="Enter your email id"/></label>
+        <label id="number-label">Age<input id="number" type="number" max="120" min="13" required placeholder="Enter your age"/></label>
+        <label id="number-label">Graduation year<input id="number" type="number" max="2025" min="1965" required placeholder="e.g. 1998"/></label>
+      </fieldset>
+      <fieldset>
+        <label>Which of the following best describes the principle industry of your organization?</label>
+        <select id="dropdown">
+        <option>Select a option</option>
+        <option>Advertising & Marketing</option>
+        <option>Agriculture</option>
+        <option>Airlines & Aerospace(including Defence)</option>
+        <option>Automotive</option>
+        <option>Business Support & Logistics</option>
+        <option>Construction, Machinary & Homes</option>
+        <option>Education</option>
+        <option>Entertainment & Leisure</option>
+        <option>Finance & Financial Services</option>
+        <option>Food & Beverages</option>
+        <option>Government</option>
+        <option>Healthcare & Pharmaceuticals</option>
+        <option>Insurance</option>
+        <option>Manufacturing</option>
+        <option>Nonprofit</option>
+        <option>Retail & Consumer Durables</option>
+        <option>Real Estate</option>
+        <option>Telecommunications, Internet & Electronics</option>
+        <option>Transportation & Delivary</option>
+        <option>Utilities, Energy and Extraction</option>
+        <option>I am currently unemployed</option>
+      </select>
+      </fieldset>
+      <fieldset>
+      <label>Overall, how satisfied have been you with your education at this institution?</label>
+      <label><input type="radio" name="ques1" value="1" required/>Very satisfied</label>
+      <label><input type="radio" name="ques1" value="2"required/>Satisfied</label>
+      <label><input type="radio" name="ques1" value="3"required/>Neither satisfied nor dissatisfied</label>
+      <label><input type="radio" name="ques1" value="4"required/>Dissatisfied</label>
+      <label><input type="radio" name="ques1" value="5"required/>Very dissatisfied</label>
+      </fieldset>
+      
+      <fieldset>
+      <label>How connected do you feel to this institution?</label>
+      <label><input type="radio" name="ques2" value="1"required/>Very strong connection</label>
+      <label><input type="radio" name="ques2" value="2"required/>Some connection</label>
+      <label><input type="radio" name="ques2" value="3"required/>Very little connection</label>
+      <label><input type="radio" name="ques2" value="4"required/>No connection</label>
+      </fieldset>
+      
+      <fieldset>
+      <label>Which of the following best describes you?</label>
+      <label><input type="radio" name="ques3" value="1"required/>Employed- working full time</label>
+      <label><input type="radio" name="ques3" value="2"required/>Employed - working part time</label>
+      <label><input type="radio" name="ques3" value="3"required/>Not employed - student</label>
+      <label><input type="radio" name="ques3" value="4"required/>Not employed - retired</label>
+      <label><input type="radio" name="ques3" value="5"required/>Not employed - looking for paid work</label>
+      <label><input type="radio" name="ques3" value="6"required/>Not employed - not looking for paid work</label>
+      </fieldset>
+      
+      <fieldset>
+        <label>Which facilities do you like the most in this institution</label>
+        <label><input type="checkbox" value="1"/>Faculty</label>
+        <label><input type="checkbox" value="2"/>Study enivronment</label>
+        <label><input type="checkbox" value="3"/>Library</label>
+        <label><input type="checkbox" value="4"/>Labs</label>
+        <label><input type="checkbox" value="5"/>Classrooms</label>
+        <label><input type="checkbox" value="6"/>Smart classrooms</label>
+        <label><input type="checkbox" value="7"/>Sports</label>
+        <label><input type="checkbox" value="8"/>Cultural Events</label>
+        <label><input type="checkbox" value="9"/>Technical Events</label>
+      </fieldset>
+
+      <fieldset>
+      <label>How likely is it that you would recommend this institution to another student<label>
+        <label>0 - Not likely</label><label>10 - Very likely</label>
+        
+        <div class="chart-scale">
+          <button class="button-scale-asc">0</button>
+          <button class="button-scale-asc">1</button>
+          <button class="button-scale-asc">2</button>
+          <button class="button-scale-asc">3</button>
+          <button class="button-scale-asc">4</button>
+          <button class="button-scale-asc">5</button>
+          <button class="button-scale-asc">6</button>
+          <button class="button-scale-asc">7</button>
+          <button class="button-scale-asc">8</button>
+          <button class="button-scale-asc">9</button>
+          <button class="button-scale-asc">10</button>
+        </div>
+      </fieldset>
+      
+      <fieldset>
+        <label>And why did you select that number?</label>
+        <textarea name="recommendation_description"rows="3" cols="30" required></textarea>
+      </fieldset>
+
+      <input type="submit" value="Submit" id="submit">
+    </form>
+  </body>
+</html>
